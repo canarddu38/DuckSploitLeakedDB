@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Upload - DSleaks</title>
+	<link rel="icon" type="image/png" href="https://ducksploit.com/assets/images/icon.png">
+    <meta
+      property="og:description"
+      content="Upload a new leked database to our server"
+    />
+    <meta property="og:title" content="Upload - DSleaks" />
+    <meta
+      name="description"
+      content="Upload a new leked database to our server"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 1rem;
+      }
+	  
+	  ::placeholder {
+		color: #323232;
+	  }
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.625;
+        color: var(--dl-color-secondary-400);
+        background-color: var(--dl-color-gray-white);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      data-tag="font"
+    />
+    <style>
+      html * {
+          -webkit-font-smoothing: antialiased;
+      }
+      input::placeholder, textarea::placeholder {
+         color: #d2d6da;
+      }
+    </style>
+    <style data-section-id="dropdown">
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <script src="./dsleaks.js"></script>
+  <body>
+    <div>
+      <link href="./upload.css" rel="stylesheet" />
+
+      <div class="upload-container">
+        <header data-role="Header" class="upload-header">
+          <img
+            alt="logo"
+            src="public/playground_assets/banner-1500h.png"
+            class="upload-image"
+          />
+          <a href="index.html" class="upload-navlink">Home</a>
+          <a href="status.html" class="upload-navlink1">
+            <span>Status</span>
+            <br />
+          </a>
+          <span class="upload-text02">Upload</span>
+        </header>
+        <div class="upload-stats">
+          <div class="upload-stat">
+            <h1 class="upload-text03">+200</h1>
+            <span class="upload-text04">
+              <span>DataBases</span>
+              <br />
+            </span>
+            <span class="upload-text07">
+              <span>Our website contains a huge list of dabases</span>
+              <br />
+            </span>
+          </div>
+          <div class="upload-stat1">
+            <h1 class="upload-text10">+5000</h1>
+            <span class="upload-text11">
+              <span>Hacked accounts</span>
+              <br />
+            </span>
+            <span class="upload-text14">
+              <span>These accounts are hacked</span>
+              <br />
+            </span>
+          </div>
+          <div class="upload-stat2">
+            <h1 class="upload-text17">+100</h1>
+            <span class="upload-text18">Users</span>
+            <span class="upload-text19">
+              <span>A lot of users are using our services</span>
+              <br />
+            </span>
+          </div>
+          <div class="upload-stat3">
+            <h1 class="upload-text22"><span>24/7</span></h1>
+            <span class="upload-text24">Support</span>
+            <span class="upload-text25">
+              <span>In our Discord Server</span>
+              <br />
+            </span>
+          </div>
+        </div>
+        <div class="upload-container1">
+          <div class="upload-container2">
+            <h1 class="upload-text28">
+              <span>Upload a new DataBase</span>
+              <br />
+            </h1>
+            <p id="typetext" class="upload-text31">
+              <span>Database provider (domain ex.google.com)</span>
+              <br />
+            </p>
+            <input
+              type="text"
+              placeholder="domain"
+			  id="domain"
+              class="upload-textinput input placeholder"
+            />
+            <p id="typetext" class="upload-text34">
+              <span>DataBase content</span>
+              <br />
+            </p>
+            <textarea
+              placeholder="data"
+              id="database"
+              class="upload-textarea textarea"
+            ></textarea>
+            <div
+              class="secondary-button-container secondary-button-root-class-name"
+            >
+              <button onclick="upload()" class="secondary-button-button button buttonSmall">
+                <span>Upload</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
