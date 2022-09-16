@@ -1,7 +1,10 @@
 function search() 
 {
 	query = window.location.search;
+	searchinputfromquery = query.replace("?s=", "");
+	searchinputfromquery = searchinputfromquery.replace("%20", " ");
 	
+	document.getElementById("searchinput").value = searchinputfromquery;
 	fetch('https://dsleaks-db-default-rtdb.firebaseio.com/databases.json')
 	 .then(response => response.text())
 	 .then(data => {
@@ -19,6 +22,11 @@ function search()
 		})
 		
 	})
+}
+function gotosearch() 
+{
+	search=document.getElementById("searchinput").value;
+	window.location.replace("search.html?s="+search);
 }
 function upload() 
 {
